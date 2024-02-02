@@ -4,94 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Exercise</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-    </style>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <section id="home">
-        <header>WELCOME!</header>
-        <h2>LINKS</h2>
+        <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-                <li><a href="about">About Us</a></li>
-                <li><a href="#image">Images</a></li>
-                <li><a href="#form">Forms</a></li>
-                <li><a href="#table">Table</a></li>
-                <li><a href="#audio">Audio</a></li>
-                <li><a href="#video">Video</a></li>
+                <a href="#home">Home</a>
+                <a href="#contacts">Contacts</a>
+                <a href="#about">About Us</a>
+                <a href="#image">Images</a>
+                <a href="#form">Forms</a>
+                <a href="#video">Videos</a>
+                <a href="#audio">Audios</a>
+                <a href="#map">Google Map</a>
+                <a href="#tweet">Twitter Feed</a>
+                <a href="#" onclick="changeBackgroundColor()">Dark Mode</a>
             </ul>
+            <script src="script.js"></script>
         </nav>
+        </header>
+
     </section>
 
     <section id="about">
         <h2>About Us</h2>
         <h4>ALEEAH JOSELLE O. GINEZ</h4>
-    <p>"Passionate IT graduate from the University of the Cordilleras with 1 year of experience in technology 
+    <p>"Passionate <abbr title="Information Technology">IT</abbr> graduate from the University of the Cordilleras with 1 year of experience in technology 
         administration. Seeking to use proven skills in JavaScript and Python to meet business plans and goals at ABC 
         Company"</p>
+    </section>
+
+    <section id="contacts">
+        <h2>Contacts</h2>
+        <p><b>Contact No.</b>: 09994494186 <br>
+        <b>G-mail</b>: aog1445@students.uc-bcf.edu.ph <br>
+        <b>Facebook</b>: Aleeah Ginez</p>
     </section>
 
     <section id="image">
     <h2>IMAGE</h2>
     <figure>
         <img src="gojo.jpg" alt="Gojo Satoru">
-        <figcaption>Gojo Satoru :))</figcaption>
+        <p>Gojo is from the anime series <abbr title="Jujutsu Kaisen">JJK.</abbr></p>
+        <figcaption>Image source: https://persephone-official.medium.com/beyond-cursed-energy-analyzing-gojo-satoru-as-a-black-character-in-jujutsu-kaisen-6f0181fbcdcd <br><cite>Beyond Cursed Energy: Analyzing Gojo Satoru as a Black Character in Jujutsu Kaisen</cite> (Persephone, 2023)</figcaption>
+
     </figure>
     </section>
     
     <section id="form">
         <h2>FORMS</h2>
-        <form action="submit-form" method="post"></form>
+        <form id="myForm" onsubmit="validateForm(event)">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <br>
-    <label for="password">Password:</label>
-    <input type="password" name="password" id="password" minlength="10" required>
 
-    <br>
-    <p>
-        <label>
-            <input type="radio" name="gender" value="male" checked>
-            Male
-        </label>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
         <br>
-        <label>
-            <input type="radio" name="gender" value="Female">
-            Female
-        </label>
-    <label>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
         <br>
-        <input type="checkbox" name="acceptTerms" required>
-            I accept the terms and conditions
-    </label>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+    
     <br>
     <input type="submit" value="Submit">
+    </form>
+    <script src="validation.js"></script>
     </section>
-    </p>
-
     <br>
     <section id="video">
         <h2>Video</h2>
@@ -112,43 +98,25 @@
         </audio>
         </figure>
     </section>
-    <br>
-    
-    <section id="table">
-        <h2>Table</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>City</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John</td>
-                    <td>25</td>
-                    <td>New York</td>
-                </tr>
-                <tr>
-                    <td>Jane</td>
-                    <td>30</td>
-                    <td>Los Angeles</td>
-                </tr>
-                <tr>
-                    <td>Aleeah</td>
-                    <td>20</td>
-                    <td>Pangasinan</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section id="contacts">
-        <h2>Contacts</h2>
-        <p><b>Contact No.</b>: 09994494186 <br>
-        <b>G-mail</b>: aog1445@students.uc-bcf.edu.ph <br>
-        <b>Facebook</b>: Aleeah Ginez</p>
+
+    <section id="map">
+    <h2>Google Map</h2>
+    <iframe 
+    width="600"
+    height="450"
+    frameborder="0"
+    style="border: 0"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d503085.05916039174!2d125.73038326014124!3d9.904610586643825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3304043652d9e9b3%3A0xd4c56a60c9a11b84!2sSiargao%20Island!5e0!3m2!1sen!2sph!4v1706884134305!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen
+    aria-hidden="false"
+    tabindex="0"
+    ></iframe>
     </section>
 
+    <section id="tweet">
+    <h2>Twitter Feed</h2>
+    <a class="twitter-timeline" data-width="400" data-height="300" data-theme="light" href="https://x.com/michellemdee?s=20">Tweets by MMD</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="UTF-8"></script>
+</section>
 </body>
 </html>
