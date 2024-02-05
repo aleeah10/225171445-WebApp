@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Format</title>
+</head>
+<body>
+    <h2>Abbr</h2>
+    <p>This is an <abbr title="abbreviation">abbr.</abbr></p>
+
+<h2>Address</h2>
+<address>
+    <p>
+        Aleeah Ginez <br>
+        San Mariano, Sta. Maria, Pangasinan <br>
+        Email: aog1445@students.uc-bcf.edu.ph <br>
+        Phone: 09994494186
+    </p>
+</address>
+
+<h2>B</h2>
+<p><b>This is how to use bold texts.</b></p>
+<h2>BDI</h2>
+<p>this is a normal text</p>
+<p><bdi>This is thai: คุณดูดี</bdi></p>
+
+ <h2>BDO</h2>
+ <p>This is normal</p>
+ <p><bdo dir="rtl">This is rtl</bdo></p>
+
+ <h2>Blockquote</h2>
+ <blockquote>
+    <p>"If I could stop one heart from breaking, I shall not live in vain."</p>
+    <footer>- Emily Dickinson</footer>
+ </blockquote>
+
+ <h2>Cite</h2>
+ <p>
+    From the movie <cite>The Lion King</cite>, Simba stated <q>The past can hurt, but the way I see it, you can either run from it or learn from it.</q>
+ </p>
+
+ <h2>Code</h2>
+ <p>To display the current date in JavaScript, you can use the code <code>Date</code>.</p>
+ <pre>
+    <code>
+        const currentDate = new Date();
+        console.log(currentDate);
+    </code>
+ </pre>
+
+ <h2>Del</h2>
+ <p>I need money</p>
+ <p>I need <del>money</del> to study. </p>
+
+ <h2>dfn</h2>
+ <p>The <dfn title="Hypertext Markup Language">HTML</dfn> is the standard markup language for creatting web pages.</p>
+
+ <h2>Em</h2>
+ <p>I am <em>Aleeah Ginez.</em></p>
+
+ <h2>i</h2>
+ <p>She <i>danced</i> the night away.</p>
+
+ <h2>ins</h2>
+ <p><ins>I am</ins> Aleeah Ginez.</p>
+
+ <h2>kbd</h2>
+ <p>To copy text, use <kbd>ctrl</kbd> + <kbd>c</kbd>, and to paste the text, use <kbd>ctrl</kbd> + <kbd>v.</kbd></p>
+
+ <h2>Mark</h2>
+ <p>I am <mark>Aleeah Ginez</mark>.</p>
+
+ <h2>Meter</h2>
+ <label for="fileSize">Downloading:</label>
+ <meter id="fileSize" value="80" min="0" max="100">80%</meter>
+
+ <h2>Pre</h2>
+ <pre>"If I could stop one heart from breaking, <br>I shall not live in vain."</pre>
+
+ <h2>Progress</h2>
+ <label for="fileUpload">File Upload:</label>
+ <progress id="fileUpload" value="80" max="100">80%</progress>
+
+ <h2>Quote</h2>
+ <p>A famous philosopher once said, <q>Magtitipid na talaga ako.</q></p>
+
+ <h2>rp/ruby</h2>
+ <p>Japanese: <ruby>日本<rp>(</rp><rt>Nihon</rt><rp>)</rp></ruby></p>
+
+ <h2>rt/ruby</h2>
+ <p>Japanese: <ruby>日本<rt>Nihon</rt></ruby></p>
+
+ <h2>s</h2>
+ <p>The <s>center</s> element is not supported by html.</p>
+
+ <h2>samp</h2>
+<p>The output of the code is <samp>hello world</samp>.</p>
+
+<h2>small</h2>
+<p><small>I am Aleeah Ginez</small></p>
+
+<h2>strong</h2>
+<p>I am <strong>Aleeah Ginez</strong></p>
+
+<h2>sub</h2>
+<p>The chemical formula for water is H<sub>2</sub>O.</p>
+
+<h2>sup</h2>
+<p>The formula for the area of a circle is A = πr<sup>2</sup>.</p>
+
+<h2>template</h2>
+<template id="myTemp">
+    <p>I am Aleeah Ginez</p>
+</template>
+<script>
+    const template = document.getElementById('myTemp');
+    const clone = document.importNode(template.content, true);
+    document.body.appendChild(clone);
+</script>
+
+<h2>time</h2>
+<p>The current date right now is <time>February 05,2024</time>.</p>
+
+<h2>u</h2>
+<p><u>I am Aleeah Ginez</u></p>
+
+<h2>var</h2>
+<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+
+<h2>wbr</h2>
+<p>Thisisaverylongwordthatneedstobebrokenwith<wbr>linebreaksforbetterreadability.</p>
+</body>
+</html>
