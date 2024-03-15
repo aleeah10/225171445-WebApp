@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <style type="text/CSS">
+        .canvas {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+        .background {
+            background: red;
+            width: 100%;
+            height: 100%;
+        }
+        .head {
+            background: yellow;
+            width: 100px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            top: 40px;
+            left: 100px;
+        }
+        .eyeball {
+            background: black;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 70px;
+        }
+        .pupil {
+            color: aquamarine;
+            font-size: 50px;
+            position: absolute;
+            top: -20px;
+            left: 5px;
+        }
+        .beak {
+            color: black;
+            font-size: 40px;
+            position: absolute;
+            top: 18px;
+            left: 98px;
+        }
+        .body {
+            background: rgb(242, 230, 55);
+            width: 110px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 100px;
+            left: 90px;
+        }
+        .wing {
+            transform: rotate(50deg);
+            background: rgb(140, 185, 51);
+            width: 70px;
+            height: 104px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 10px;
+        }
+        .drumstick {
+            position: absolute;
+            top: 96px;
+            left: 60px;
+            color: blueviolet;
+        }
+        .drumstick-right {
+            font-size: 20px;
+            top: 93px;
+            left: 110px;
+            color: blueviolet;
+            position: absolute;
+        }
+    </style>
+    <div class="canvas background">
+        <div class="air background"></div>
+        <div class="head">
+            <div class="eyeball">
+                <span class="pupil">&middot;</span>
+            </div>
+            <div class="beak">
+                <strong>&gt;</strong>
+            </div>
+        </div>
+        <div class="body">
+            <div class="wing">
+            </div>
+        </div>
+        <div class="drumstick">
+            <div class="drumstick">|
+                <br />|\
+            </div>
+            <div class="drumstick drumstick-right">|
+                <br />|\
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
