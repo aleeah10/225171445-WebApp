@@ -71,7 +71,9 @@ section li {
   margin: 15px 0px 0px 20px;
 }
 
+
 code {
+  color: #ffffff;
   display: block;
   text-align: left;
   white-space: pre-line;
@@ -79,10 +81,20 @@ code {
   word-break: normal;
   word-wrap: normal;
   line-height: 2;
-  background-color: #f7f7f7;
+  background-color: #000000;
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
+}
+
+blockquote {
+  background-color: rgb(205, 245, 159);
+  border-radius: 6pt;
+  padding-left: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 16px;
+  border-left: solid 5px rgb(136, 161, 140);
 }
 
 @media only screen and (max-width: 815px) {
