@@ -2,7 +2,7 @@ html {
     /* Setting a base font size of 10px give us easier rem calculations
          Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
        */
-    font-size: 10px;
+    font-size: 11px;
   }
   
   body {
@@ -17,7 +17,7 @@ html {
   }
   
   h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     margin-bottom: 0;
   }
   
@@ -41,10 +41,11 @@ html {
   }
   
   #main {
-    margin: 30px 8px;
-    padding: 15px;
+    margin: 0px 0px;
+    padding-top: 2%;
+    padding-bottom: 1%;
     border-radius: 5px;
-    background: #eee;
+    background: #c0e1f4;
   }
   
   @media (max-width: 460px) {
@@ -55,29 +56,54 @@ html {
   
   img {
     max-width: 100%;
-    display: block;
+    height: 60%;
+    width: 40%;
+    display: flexbox;
     height: auto;
     margin: 0 auto;
   }
   
   #img-div {
-    background: white;
-    padding: 10px;
-    margin: 0;
+    background:  #9ec2ec;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    margin: 1%;
+    border-style: ridge;
+    font-family: cursive;
+    border-color: rgb(222, 147, 48);
+  }
+
+  #back{
+    line-height: 150%;
+    font-size: 2.5rem;
+    font-family: cursive;
+    border: ridge;
+    margin: 1%;
+    border-color: rgb(222, 147, 48);
+    background: #9ec2ec;
   }
   
   #img-caption {
     margin: 15px 0 5px 0;
   }
+
+  #tribute-info{
+    font-family: cursive;
+    background: #9ec2ec;
+    margin: 1%;
+    border: ridge;
+    border-color: rgb(222, 147, 48);
+  }
   
   @media (max-width: 460px) {
     #img-caption {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
     }
   }
   
   #headline {
-    margin: 50px 0;
+    background:#9ec2ec;
+    margin: 1% auto;
     text-align: center;
   }
   
@@ -93,8 +119,11 @@ html {
   }
   
   blockquote {
+    color:rgb(87, 58, 21);
     font-style: italic;
+    font-family:unset;
     max-width: 545px;
     margin: 0 auto 50px auto;
     text-align: left;
+    font-size: 2rem;
   }
