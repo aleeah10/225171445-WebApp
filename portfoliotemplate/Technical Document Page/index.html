@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Overview</a></li>
+        <li><a class="nav-link" href="#What_can_html_do">What can HTML do?</a></li>
+        <li><a class="nav-link" href="#start">Getting Started</a></li>
+        <li><a class="nav-link" href="#vscode">VS Code</a></li>
+        <li><a class="nav-link" href="#github">GitHub</a></li>
+        <li><a class="nav-link" href="#syntax">HTML Syntax</a></li>
+        <li><a class="nav-link" href="#elements">Basic HTML Elements</a></li>
+        <li>
+          <a class="nav-link" href="#css">CSS</a>
+        </li>
+        <li><a class="nav-link" href="#reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>HTML (Hypertext Markup Language) is the standard markup language for creating web pages and web applications.
+            It describes the structure of a web page semantically and originally included cues for the appearance (CSS) of the document.
+            HTML elements are the building blocks of HTML pages, and they are represented by tags.
+          </p>
+          <p>
+            "Hypertext" denotes the interconnected links that facilitate the navigation between web pages, whether they belong to a single 
+            website or different ones. Links are a foundational feature of the Internet. By publishing content online and associating it with pages
+            authored by others, you engage as an integral contributer to the expensive network of the World Wide Web.
+          </p>
+          <p>
+            HTML5 stands as the most recent iteration of HTML, ushering in fresh features and enhancements compared to its predecessors.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="What_can_html_do">
+        <header>What can HTML do?</header>
+        <article>
+          <blockquote>
+            HTML is a fundemental skill for web developers as it is the backbone of web development. Understanding HTML is essential for anyone
+            involved is creating websites or web applications.
+          </blockquote>
+          <ul>
+            <li><b>Create Structured Content:</b> HTML provides elements like headings, paragraphs, lists, tables, and more to organize your content logically.</li>
+            <li><b>Embed Multimedia:</b> With HTML, you can embed images, audio, video, and other multimedia elements directly into your web pages.</li>
+            <li><b>Add Hyperlinks:</b> HTML allows you to create hyperlinks, enabling users to navigate between different pages on your website or to external websites.
+            </li>
+            <li><b>Build Forms:</b> You can use HTML to create forms for collecting user input, such as text fields, checkboxes, radio buttons, and submit buttons.</li>
+            <li><b>Design Layouts and Interactivity:</b> HTML supports CSS (Cascading Style Sheets) and JavaScript which allows you to control the layout and add interactive elements to
+            to yoru web pages.</li>
+          </ul>
+        </article>
+      </section>
+      
+      <section class="main-section" id="start">
+        <header>Getting Started</header>
+        <p>
+          To create an HTML document, you need a text editor and a web browser. Follow these steps to get started:
+        </p>
+        <ol>
+          <li>Open a text editor such as Notepad, Visual Studio Code, etc.</li>
+          <li>Write your HTML code.</li>
+          <li>Save the file with a .html extension.</li>
+          <li>Open the HTML file in a web browser to see the result.</li>
+        </ol>
+        </article>
+      </section>
+      <section class="main-section" id="vscode">
+        <header>VS Code</header>
+        <article>
+          <p>
+            Visual Studio Code (VS Code) is a popular code editor developed by Microsoft, and it's excellent for working with HTML. Here are some features 
+            of VS Code for HTML development:
+          </p>
+          <ul>
+            <li><b>Syntax Highlighting:</b> VS Code provides syntax highlighting for HMTL, making it easy to distinguish between HTML elements, attributes,
+            and values.</li>
+            <li><b>Emmet Abbreviations:</b> VS Code comes with built-in support for Emmet, a powerful toolkit for web developers. Emmet abbreviations allow you
+            to generate HTML code snippets quickly by typing short abbreviations and expanding them into full HTML structures.</li>
+            <li><b>Live Server:</b> VS Code offers extensions like Like Server, which allows you to preview your HTML files in a web browser and automatically refresh the
+            page whenever you make changes to the code.</li>
+            <li><b>Integrated Terminal:</b> VS Code has an integrated terminal, allowing you to run commands and scripts directly within the editor. This is useful
+            for tasks like starting a development server or running build scripts.</li>
+            <li><b>Extensions:</b> VS Code has a vast ecosystem of extensions that you can install to enhance your HMTL development experience.</li>
+          </ul>          
+        </article>
+      </section>
+      <section class="main-section" id="github">
+        <header>GitHub</header>
+        <article>
+          <p>
+            GitHub is a popular platform for hosting and managing code repositories, including HTML projects. Here's how you cna use GitHub for HTML development:
+          </p>
+          <h3><b>1. Create a Repository:</b></h3>
+          <ol>
+            <li>Sign in to your GitHub account. </li>
+            <li>Click on the "+" icon in the top-right corner and select "New Repository".</li>
+            <li>Give your repository a name, optionally add a description, choose whether it should be public or private,
+              and then click "Create repository".
+            </li>
+          </ol>
+          <h3><b>2. Initialize a Git Repository Locally</b></h3>
+          <ol>
+            <li>Open your terminal or command prompt.</li>
+            <li>Navigate to the directory where your HTML files are located.</li>
+            <li>Run the following commands:</li>
+          </ol>
+          <code>git init
+            git add .
+            git commit -m "Initial commit"
+          </code>
+          <h3><b>3. Connect Your Local Repository to GitHub:</b></h3>
+          <ol>
+            <li>Go back to your GitHub repository page.</li>
+            <li>Copy the URL of your repository (it should end in '.git').</li>
+            <li>In your terminal, run the following command, replacing '< repository-url >' with the URL you copied:</li>
+          </ol>
+          <code>git remote add origin "< repository-url >
+            git push -u origin master
+          </code>
+          <h3>4. Manage Your HTML Files:</h3>
+          <ol>
+            <li>Create or add your HTML files to your local repository.</li>
+            <li>Use Git commands (git add, git commit, git push) to manage changes and synchronize them with your GitHub repository.</li>
+          </ol>
+          <h3>5. Collaboration and Version Control:</h3>
+          <ol>
+            <li>Share the URL of your GitHub repository with collaborators to allow them 
+              to clone the repository, make changes, and propose improvements via pull requests.</li>
+            <li>Use branches to work on new features or experiments without affecting the main codebase.</li>
+            <li>Review pull requests, discuss changes, and merge them into the main branch once they're ready.</li>
+          </ol>
+        </article>
+      </section>
+      <section class="main-section" id="syntax">
+        <header>HTML Syntax</header>
+        <article>
+          <p>
+           An HTML document consists of a tree of elements and content. Elements are represented by tags, and most tags come in pairs: an opening tag and closing tag.
+           The opening tag contains the name of the element, enclosed in angle brackets, and the closing tag has a forward slash before the element name.
+          </p>
+          <code> &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My First HTML Page&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello, World!&lt;/h1&gt;
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </code>
+          <p>
+            In this example:
+          </p>
+          <ul>
+            <li><b>&lt;!DOCTYPE html&gt;</b>: Defines the document type and version of HTML.</li>
+            <li><b>&lt;html&gt;</b>: The root element of the HTML document.</li>
+            <li><b>&lt;head&gt;</b>: Contains the meta-information about the HMTL document.</li>
+            <li><b>&lt;title&gt;</b>: Sets the title of the HTML document (displayed in the browser's title bar.).</li>
+            <li><b>&lt;body&gt;</b>: Contains the visible content of the HTML document.</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="elements">
+        <header>Basic HTML Elements</header>
+        <article>
+          HTML offers a wide range of elements to structure your content. Here are some common ones:
+          <ul>
+            <li><b>Headings:</b> &lt;h1&gt; to &lt;h6&gt; for six levels of headings.</li>
+            <code>&lt;body&gt; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt; Links and Images&lt;/h1&gt; 
+              &lt;/body&gt;
+            </code>
+            <li><b>Paragraph</b> &lt;p&gt; for paragraphs.</li>
+            <code>&lt;body>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;p>This is a sample paragraph.&lt;/p>
+              &lt;/body>
+          </code>
+            <li><b>Links:</b> &lt;a&gt; for creating hyperlinks.</li>
+            <code>&lt;body&gt; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="https://www.example.com">Visit Example&lt;/a&gt; 
+              &lt;/body&gt; 
+            </code>
+            <li><b>Images:</b> &lt;img&gt; for embedding images.</li>
+            <code>&lt;body&gt; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="image.jpg" alt="Image Description"&gt; 
+              &lt;/body&gt;</code>
+            <li><b>Lists:</b> &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; for unordered and ordered lists.</li>
+            <code>&lt;body&gt; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2>Unordered List&lt;/h2&gt; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; Item 1&lt;/li&gt; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; Item 2&lt;/li&gt; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt; Item 3&lt;/li&gt; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt; 
+              
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2>Ordered List&lt;/h2&gt; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li>First&lt;/li&gt; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li>Second&lt;/li&gt; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li>Third&lt;/li&gt; 
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt; 
+              &lt;/body&gt; 
+        </code>
+            <li><b>Tables:</b> &lt;table&gt;, &lt;tr&gt;, &lt;td&gt; for creating tables.</li>
+            <code>&lt;body>
+              &lt;h1>Tables&lt;/h1>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;table border="1">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th>Name&lt;/th>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th>Age&lt;/th>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td>John&lt;/td>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td>25&lt;/td>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/table>
+              &lt;/body></code>
+            <li><b>Forms:</b> &lt;form&gt;,&lt;input&gt;,&lt;textarea&gt;, &lt;button&gt; for creating forms.</li>
+            <code>&lt;body>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1>Forms&lt;/h1>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;form action="submit.php" method="post">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="name">Name:&lt;/label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="name" name="name">&lt;br>
+                  
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="email">Email:&lt;/label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" id="email" name="email">&lt;br>
+                  
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="message">Message:&lt;/label>&lt;br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea id="message" name="message" rows="4" cols="50">&lt;/textarea>&lt;br>
+                  
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Submit">
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;/form>
+              &lt;/body>
+            </code>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="css">
+        <header>CSS</header>
+        <p>Cascading Style Sheets (CSS) is a styling language used to describe the presentation of a document written in markup
+          languages like HTML or XML. It controls how HTML elements are displayed on a web page, including layout, colors, fontsm and spacing.
+          CSS allows web developers to separate content from presentation, makiing websites more flexible, accessible, and easier ot maintain.
+        </p>
+        <code>Example:
+
+          /* Set background color and font for the entire page */
+          body {
+            &nbsp;&nbsp;&nbsp;&nbsp;&ltbackground-color: #f0f0f0;
+            &nbsp;&nbsp;&nbsp;&nbsp;&ltfont-family: Arial, sans-serif;
+          }
+
+          /* Style the header and footer*/
+          header, footer {
+            &nbsp;&nbsp;&nbsp;&nbsp;&ltbackground-color: #333;
+            &nbsp;&nbsp;&nbsp;&nbsp;&ltcolor: #fff;
+            &nbsp;&nbsp;&nbsp;&nbsp;&ltpadding: 20px 0;
+            &nbsp;&nbsp;&nbsp;&nbsp;&lttext-align: center;
+        }
+        </code>
+      </section>
+      <section class="main-section" id="reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://primusr.notion.site/Web-Application-Development-c213cf6dbd834f6f8bcc2d02746209db?p=62117ad4bbcd4e9a970545c0f5cfb65b&pm=s"
+                target="_blank"
+                >SideNotes.</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

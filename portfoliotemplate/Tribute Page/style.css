@@ -1,0 +1,129 @@
+html {
+    /* Setting a base font size of 10px give us easier rem calculations
+         Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+       */
+    font-size: 11px;
+  }
+  
+  body {
+    /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 6rem;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 460px) {
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+    }
+  }
+  
+  h2 {
+    font-size: 3.25rem;
+  }
+  
+  a {
+    color: #477ca7;
+  }
+  
+  a:visited {
+    color: #74638f;
+  }
+  
+  #main {
+    margin: 0px 0px;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    border-radius: 5px;
+    background: #c0e1f4;
+  }
+  
+  @media (max-width: 460px) {
+    #main {
+      margin: 0;
+    }
+  }
+  
+  img {
+    max-width: 100%;
+    height: 60%;
+    width: 40%;
+    display: flexbox;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #img-div {
+    background:  #9ec2ec;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    margin: 1%;
+    border-style: ridge;
+    font-family: cursive;
+    border-color: rgb(222, 147, 48);
+  }
+
+  #back{
+    line-height: 150%;
+    font-size: 2.5rem;
+    font-family: cursive;
+    border: ridge;
+    margin: 1%;
+    border-color: rgb(222, 147, 48);
+    background: #9ec2ec;
+  }
+  
+  #img-caption {
+    margin: 15px 0 5px 0;
+  }
+
+  #tribute-info{
+    font-family: cursive;
+    background: #9ec2ec;
+    margin: 1%;
+    border: ridge;
+    border-color: rgb(222, 147, 48);
+  }
+  
+  @media (max-width: 460px) {
+    #img-caption {
+      font-size: 1.5rem;
+    }
+  }
+  
+  #headline {
+    background:#9ec2ec;
+    margin: 1% auto;
+    text-align: center;
+  }
+  
+  ul {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  li {
+    margin: 16px 0;
+  }
+  
+  blockquote {
+    color:rgb(87, 58, 21);
+    font-style: italic;
+    font-family:unset;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    font-size: 2rem;
+  }
